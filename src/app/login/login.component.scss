@@ -1,11 +1,21 @@
 @import "../../elements.scss";
 
+.login-container {
+    background: #181818;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
 .login-background {
-    width: 100%;
-    height: 100vh;
+    max-width: 1240px;
+    margin: auto;
     background: #181818 url(../../assets/img/login-background.png);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: left top 14px;
     background-size: contain;
 }
 
@@ -14,6 +24,7 @@
     background-color: #282828;
     padding: 65px;
     margin-left: auto;
+    transform: translateY(32px);
 
     &__title {
         font-size: 32px;
@@ -75,5 +86,19 @@
                 margin-left: 17px;
             }
         }
+    }
+}
+
+.progress-bar {
+    position: fixed;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background-color: rgba(228, 228, 228, 0.4);
+
+    &__move-line {
+        background-color: #0062FF;
+        height: 4px;
+        width: 13%;
     }
 }

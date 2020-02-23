@@ -1,27 +1,40 @@
 @import "../../elements.scss";
 
 .accounts {
+    margin-bottom: 44px;
 
     &__header {
         font-size: 32px;
         font-weight: 400;
         line-height: 40px;
         color: #F3F3F3;
+        margin-top: 44px;
+        margin-bottom: 10px;
     }
 
     &__container {
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
+
+        @media (min-width: 850px) {
+            flex-direction: row;
+        }
     }
 }
 
 .account {
     background-color: #3D3D3D;
     padding: 24px;
-    width: 49.5%;
-    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 850px) {
+        width: 49.5%;
+        margin-bottom: 0;
+    }
 
     &__title-container {
         display: flex;
@@ -125,14 +138,18 @@
 .requests {
     background-color: #3D3D3D;
     padding: 24px;
-    width: 49.5%;
-    box-sizing: border-box;
+    width: 100%;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 850px) {
+        width: 49.5%;
+    }
 
     &__header {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 10px;
     }
 
     &__title {
@@ -250,33 +267,50 @@
         line-height: 40px;
         color: #F3F3F3;
         font-weight: 400;
+        margin: 0;
+        margin-bottom: 13px;
     }
 
     &__container {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-direction: column;
+
+        @media (min-width: 850px) {
+           flex-direction: row;
+        }
     }
 }
 
 .product {
     background-color: #3D3D3D;
-    padding: 24px 21px 21px 24px;
-    width: 416px;
-    box-sizing: border-box;
+    padding: 24px 21px 10px 24px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
+
+    @media (min-width: 850px) {
+        width: 33%;
+        margin-bottom: 0;
+     }
 
     &__title {
         font-size: 24px;
         line-height: 30px;
         font-weight: 400;
         color: #FFFFFF;
+        margin: 0;
+        margin-bottom: 11px;
     }
 
     &__description {
         padding-left: 19px;
-        color: #F3F3F3
+        color: #f3f3f3;
+
+        &-item {
+            padding-bottom: 3px;
+        }
     }
 
     &__link {
