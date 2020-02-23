@@ -1,0 +1,96 @@
+.main-container {
+    height: 100%;
+    margin-left: 24px;
+    margin-right: 24px;
+
+    @media (min-width: 1360px) {
+        margin: auto;
+        width: 1312px;
+    }
+}
+
+.btn {
+    background-color: #0062FF;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.16px;
+    color: #FFFFFF;
+    padding: 15px;
+    border: none;
+    display: flex;
+    align-items: center;
+
+    &__arrow {
+        width: 16px;
+        height: 16px;
+        fill: #FFFFFF;
+        transform: rotate(-45deg);
+        margin-left: auto;
+    }
+}
+
+.form {
+
+    &__group {
+        display: flex;;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    &__label {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.32px;
+        color: #BEBEBE;
+        margin-bottom: 8px;
+        display: flex;
+
+        &-forgot-pass {
+            margin-left: auto;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: right;
+            letter-spacing: 0.32px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+
+    &__input {
+        background-color: #3D3D3D;
+        border: none;
+        border-bottom: 1px solid #8C8C8C;
+        padding: 11px 17px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.16px;
+        color: #8C8C8C;
+        width: 100%;
+        box-sizing: border-box;
+
+        &-password {
+            position: relative;
+        }
+
+        &-visibility {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            top: 13px;
+            right: 16px;
+            background-color: transparent;
+            border: none;
+
+            svg {
+                width: 16px;
+                height: 16px;
+                fill: #8C8C8C;
+            }
+        }
+    }
+
+    &__btn {
+        box-sizing: border-box;
+        width: 140px;
+    }
+}

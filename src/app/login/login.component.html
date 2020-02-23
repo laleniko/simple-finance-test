@@ -1,0 +1,44 @@
+<div class="login-background">
+    <section class="login">
+        <h1 class="login__title">Войти в личный<br> кабинет агента</h1>
+        <a class="login__as-client" href="#">
+            <span class="login__as-client-title">Войти как клиент</span>
+            <svg class="login__as-client-arrow">
+                <use xlink:href="../../assets/icons/sprite.svg#arrow"></use>
+            </svg>
+        </a>
+        <form class="login__form form" #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+            <div class="form__group">
+                <label class="form__label" for="tel">Номер телефона</label>
+                <input ngModel class="form__input" name="tel" type="number" placeholder="Введите телефон" id="tel">
+            </div>
+            <div class="form__group">
+                <div class="form__label">
+                    <label for="pass">Пароль</label>
+                    <a class="form__label-forgot-pass" href="#">Забыли пароль?</a>
+                </div>
+                <div class="form__input-password">
+                    <input ngModel class="form__input" name="pass" [type]="passVisibility ? 'text' : 'password'" placeholder="Введите пароль" id="pass">
+                    <button class="form__input-visibility" (click)="togglePassVisibility()" type="button">
+                        <svg>
+                            <use xlink:href="../../assets/icons/sprite.svg#visibility"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <button class="form__btn btn" type="submit">Войти
+                <svg class="btn__arrow">
+                    <use xlink:href="../../assets/icons/sprite.svg#arrow"></use>
+                </svg>
+            </button>
+        </form>
+        <div class="login__offer">
+            <p class="login__offer-title">Хотите стать агентом ?</p>
+            <a class="login__offer-link" href="#">Подробности
+                <svg>
+                    <use xlink:href="../../assets/icons/sprite.svg#arrow"></use>
+                </svg>
+            </a>
+        </div>
+    </section>
+</div>
