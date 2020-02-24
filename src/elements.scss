@@ -11,7 +11,7 @@
 }
 
 .btn {
-    background-color: #0062FF;
+    background-color: var(--button-background-color);
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.16px;
@@ -50,7 +50,7 @@
         font-size: 12px;
         line-height: 16px;
         letter-spacing: 0.32px;
-        color: #BEBEBE;
+        color: var(--sub-header);
         margin-bottom: 8px;
         display: flex;
 
@@ -89,7 +89,7 @@
             background-color: transparent;
             border: none;
 
-            svg {
+            &-icon {
                 width: 16px;
                 height: 16px;
                 fill: #8C8C8C;

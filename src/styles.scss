@@ -1,23 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-@font-face {
-    font-family: 'IBM Plex Sans';
-    src: local('IBM Plex Sans'), local('IBMPlexSans'), url('./assets/fonts/Ibmplexsans.woff2') format('woff2'), url('./assets/fonts/Ibmplexsans.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'IBM Plex Sans';
-    src: local('IBM Plex Sans Medium'), local('IBMPlexSans-Medium'), url('./assets/fonts/Ibmplexsansmedium.woff2') format('woff2'), url('./assets/fonts/Ibmplexsansmedium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
+@import './fonts.scss';
 
 :root {
     --menu-background-color: #3D3D3D;
     --account-block-background-color: #3D3D3D;
+    --button-background-color: #0062FF;
     --header-color: #FFFFFF;
+    --sub-header: #BEBEBE;
+    --text-color: #F3F3F3;
     --link-color: #6EA6FF;
+    --login-background: #181818;
+    --login-block-background: #282828;
 }
 
 * {

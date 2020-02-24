@@ -1,7 +1,7 @@
 @import "../../elements.scss";
 
 .login-background {
-    background: #181818 url(../../assets/img/login-background.png);
+    background: var(--login-background) url(../../assets/img/login-background.png);
     background-repeat: no-repeat;
     background-position: left top 14px;
     background-size: contain;
@@ -9,7 +9,7 @@
 
 .login {
     max-width: 501px;
-    background-color: #282828;
+    background-color: var(--login-block-background);
     padding: 65px;
     margin-left: auto;
     transform: translateY(32px);
@@ -32,12 +32,12 @@
             font-size: 14px;
             line-height: 18px;
             letter-spacing: 0.16px;
-            color: #BEBEBE;
+            color: var(--sub-header);
             margin-right: 33px;
         }
 
         &-arrow {
-            fill: #BEBEBE;
+            fill: var(--sub-header);
             width: 16px;
             height: 16px;
         }
@@ -53,7 +53,7 @@
             font-size: 14px;
             line-height: 18px;
             letter-spacing: 0.16px;
-            color: #BEBEBE;
+            color: var(--sub-header);
             margin: 0;
             margin-bottom: 7px;
         }
