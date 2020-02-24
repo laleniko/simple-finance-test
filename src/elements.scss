@@ -1,9 +1,10 @@
+@import "./media.scss";
+
 .main-container {
-    height: 100%;
     margin-left: 24px;
     margin-right: 24px;
 
-    @media (min-width: 1360px) {
+    @include respond(desktop) {
         margin: auto;
         width: 1264px;
     }
@@ -27,6 +28,14 @@
         transform: rotate(-45deg);
         margin-left: auto;
     }
+}
+
+.arrow-light_bottom {
+    border: solid #F3F3F3;
+    border-width: 0px 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
 }
 
 .form {

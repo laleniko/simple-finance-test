@@ -14,9 +14,10 @@
 
 
 :root {
-    --login-background-color: #181818;
-    --account-background-color: #282828;
     --menu-background-color: #3D3D3D;
+    --account-block-background-color: #3D3D3D;
+    --header-color: #FFFFFF;
+    --link-color: #6EA6FF;
 }
 
 * {
@@ -28,13 +29,5 @@ body {
     font-family: 'IBM Plex Sans';
     font-weight: 400;
     background-color: var(--account-background-color);
-    min-width: 490px;
-}
-
-.arrow-light_bottom {
-    border: solid #F3F3F3;
-    border-width: 0px 1px 1px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
+    min-width: 518px;
 }

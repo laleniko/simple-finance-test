@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -7,19 +7,23 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit, AfterViewInit {
   public passVisibility = false;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private elementRef: ElementRef) { }
 
   ngOnInit(): void {
   }
 
-  public togglePassVisibility() {
+  ngAfterViewInit(): void {
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#181818';
+ }
+
+  public togglePassVisibility(): void {
     this.passVisibility = !this.passVisibility;
   }
 
-  public onSubmit(loginForm: NgForm) {
+  public onSubmit(loginForm: NgForm): void {
     const phone = loginForm.value.tel;
     const pass = loginForm.value.pass;
     if (phone && pass && loginForm.valid) {
